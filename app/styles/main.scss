@@ -1,0 +1,141 @@
+// bower:scss
+@import "jeet/scss/jeet/index.scss";
+// endbower
+
+html, body {
+  
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  line-height: 1.15;
+
+  background-color: #004288;
+  
+  h1 {
+    
+    @include align();
+    
+    font-size: 24*1em;
+    font-weight: 700;
+    
+    padding-bottom: 2rem;
+    
+    text-align: center;
+    width: 85%;
+  }
+  
+  textarea {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    
+    resize: none;
+    
+    @include align();
+    
+    background: none;
+    
+    width: 85%;
+    height: 1em;
+    
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    
+    text-align: center;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color: white;
+      opacity: 0.25;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: white;
+      opacity: 0.25;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: white;
+      opacity: 0.25;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: white;
+      opacity: 0.25;
+    }
+  }
+  
+  div.header {
+    
+    @include align(horizontal);
+    top: 4.5rem;
+
+    font-size: 12/16*1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    
+    opacity: 0.25;
+  
+    b {      
+//       padding-bottom: 1px;
+      border-bottom: 2px solid white;
+    }
+    
+    &#character-count {
+      display: none;
+    }
+  }
+  
+  button {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    
+    @include align(horizontal);
+    bottom: 3rem;
+    
+    font-size: 12/16*1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    background: none;
+    
+    border: 3px solid white;
+    padding: 1rem;
+    text-align: center;
+    
+    width: 12rem;
+
+    cursor: pointer;
+    
+    opacity: 0.25;
+    
+    transition: opacity 0.05s;
+    
+    &:hover {
+      opacity: 1;
+      
+      background-color: rgba(white, 0.1);
+    }
+    
+    &#submit {
+      display: none;
+    }
+  }
+}

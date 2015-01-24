@@ -1,0 +1,14 @@
+{
+  "name": "justleaveamsg",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "reset-css": "~2.0.20110126",
+    "jeet": "~6.1.2",
+    "FitText.js": "~1.2.0",
+    "jquery-autosize": "~1.18.17",
+    "pleasejs": "~0.4.2",
+    "moment": "~2.9.0",
+    "Colors.js": "~1.2.4"
+  }
+}
